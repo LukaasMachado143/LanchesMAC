@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "UoxlO891O65mO1JFJ3TCKoCUeq5HtcyYuakMSs2iKi+J8LHRNlBh/7gHIyJ6RYAMiwWMmIsPAGmu2wl5xDQQXA==",
+  "dgSpecHash": "g/eYJfVfH7qyQ7wcOmG7bgqTzArGqAjdntEBCM6BHFJIR+3HI0zyOvEKYesQIWJKV0w97SmyzEJNCr7Q4c1fZg==",
   "success": true,
   "projectFilePath": "L:\\Programation\\ESTUDOS\\Andre_Mentor_DEV_BACKEND\\LanchesMAC(WEB-APP)\\LanchesMAC(WEB-APP)\\LanchesMAC(WEB-APP).csproj",
   "expectedPackageFiles": [
@@ -14,7 +14,7 @@
     "C:\\Users\\Lucas\\.nuget\\packages\\microsoft.entityframeworkcore.design\\6.0.16\\microsoft.entityframeworkcore.design.6.0.16.nupkg.sha512",
     "C:\\Users\\Lucas\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\6.0.16\\microsoft.entityframeworkcore.relational.6.0.16.nupkg.sha512",
     "C:\\Users\\Lucas\\.nuget\\packages\\microsoft.entityframeworkcore.sqlserver\\6.0.16\\microsoft.entityframeworkcore.sqlserver.6.0.16.nupkg.sha512",
-    "C:\\Users\\Lucas\\.nuget\\packages\\microsoft.entityframeworkcore.tools\\6.0.12\\microsoft.entityframeworkcore.tools.6.0.12.nupkg.sha512",
+    "C:\\Users\\Lucas\\.nuget\\packages\\microsoft.entityframeworkcore.tools\\6.0.16\\microsoft.entityframeworkcore.tools.6.0.16.nupkg.sha512",
     "C:\\Users\\Lucas\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\6.0.0\\microsoft.extensions.caching.abstractions.6.0.0.nupkg.sha512",
     "C:\\Users\\Lucas\\.nuget\\packages\\microsoft.extensions.caching.memory\\6.0.1\\microsoft.extensions.caching.memory.6.0.1.nupkg.sha512",
     "C:\\Users\\Lucas\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\6.0.0\\microsoft.extensions.configuration.abstractions.6.0.0.nupkg.sha512",
