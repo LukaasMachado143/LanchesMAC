@@ -1,12 +1,12 @@
-﻿@model IEnumerable<LanchesMAC_WEB_APP_.Models.Item>
+﻿@model ItemListViewModel
 
 <div class="title"> 
-    <h2>Todos os Itens</h2>
+    <h2>@Model.CategoriaAtual</h2>
 </div>
 
 <div class="container">
     <div class="row">
-        @foreach(var item in Model){
+        @foreach(var item in Model.Itens){
             <div class="col-sm-4 col-md-4 col-lg-4">
                 <p><img src="@item.ImagemUrl" /></p>
                 <h3>Preço: @item.Preco.ToString("c")</h3>
