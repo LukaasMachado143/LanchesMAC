@@ -4,10 +4,15 @@
     <h2>Todos os Itens</h2>
 </div>
 
-@foreach(var item in Model){
-    <div class="Item">
-        <h4>Item: @item.NomeItem</h4>
-        <p><img src="@item.ImagemUrl" /></p>
-        <p>Preço: @item.Preco.ToString("c")</p>
+<div class="container">
+    <div class="row">
+        @foreach(var item in Model){
+            <div class="col-sm-4 col-md-4 col-lg-4">
+                <p><img src="@item.ImagemUrl" /></p>
+                <h3>Preço: @item.Preco.ToString("c")</h3>
+                <h5>@item.NomeItem</h5>
+                <p>@item.DescricaoCurta</p>
+            </div>
+        }
     </div>
-}
+</div>
