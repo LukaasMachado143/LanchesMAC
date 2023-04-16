@@ -1,4 +1,6 @@
 using LanchesMAC_WEB_APP_.Context;
+using LanchesMAC_WEB_APP_.Repositories;
+using LanchesMAC_WEB_APP_.Repositories.Interfaces;
 using Microsoft.EntityFrameworkCore;
 
 namespace LanchesMAC_WEB_APP_
@@ -14,7 +16,8 @@ namespace LanchesMAC_WEB_APP_
             builder.Services.AddDbContext<AppDbContext>(
                 options => options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnectionString"))
                 );
-
+            builder.Services.AddTransient<ICategoriaRepository, CategoriaRepository>();
+            builder.Services.AddTransient<IItemRepository, ItemRepository>();
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.
