@@ -13,6 +13,18 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "L:\\Programation\\ESTUDOS\\Andre_Mentor_DEV_BACKEND\\LanchesMAC(WEB-APP)\\LanchesMAC(WEB-APP)\\wwwroot\\images\\carousel11.jpg",
+      "PackagePath": "staticwebassets\\images\\carousel11.jpg"
+    },
+    {
+      "Id": "L:\\Programation\\ESTUDOS\\Andre_Mentor_DEV_BACKEND\\LanchesMAC(WEB-APP)\\LanchesMAC(WEB-APP)\\wwwroot\\images\\carousel12.jpg",
+      "PackagePath": "staticwebassets\\images\\carousel12.jpg"
+    },
+    {
+      "Id": "L:\\Programation\\ESTUDOS\\Andre_Mentor_DEV_BACKEND\\LanchesMAC(WEB-APP)\\LanchesMAC(WEB-APP)\\wwwroot\\images\\carousel13.jpg",
+      "PackagePath": "staticwebassets\\images\\carousel13.jpg"
+    },
+    {
       "Id": "L:\\Programation\\ESTUDOS\\Andre_Mentor_DEV_BACKEND\\LanchesMAC(WEB-APP)\\LanchesMAC(WEB-APP)\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },

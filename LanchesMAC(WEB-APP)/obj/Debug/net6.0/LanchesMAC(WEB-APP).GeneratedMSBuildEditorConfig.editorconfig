@@ -20,12 +20,12 @@ build_property._RazorSourceGeneratorDebug =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[L:/Programation/ESTUDOS/Andre_Mentor_DEV_BACKEND/LanchesMAC(WEB-APP)/LanchesMAC(WEB-APP)/Views/Home/Privacy.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
 [L:/Programation/ESTUDOS/Andre_Mentor_DEV_BACKEND/LanchesMAC(WEB-APP)/LanchesMAC(WEB-APP)/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[L:/Programation/ESTUDOS/Andre_Mentor_DEV_BACKEND/LanchesMAC(WEB-APP)/LanchesMAC(WEB-APP)/Views/Shared/_CarouselImages.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9DYXJvdXNlbEltYWdlcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [L:/Programation/ESTUDOS/Andre_Mentor_DEV_BACKEND/LanchesMAC(WEB-APP)/LanchesMAC(WEB-APP)/Views/Shared/_ValidationScriptsPartial.cshtml]
