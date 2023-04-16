@@ -1,11 +1,10 @@
-﻿using System;
-using Microsoft.EntityFrameworkCore.Migrations;
+﻿using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
 namespace LanchesMAC_WEB_APP_.Migrations
 {
-    public partial class initialMigration : Migration
+    public partial class MigrationActual : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -13,9 +12,10 @@ namespace LanchesMAC_WEB_APP_.Migrations
                 name: "Categorias",
                 columns: table => new
                 {
-                    CategoriaId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
-                    NomeCategoria = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    Descricao = table.Column<string>(type: "nvarchar(max)", nullable: true)
+                    CategoriaId = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    NomeCategoria = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: false),
+                    Descricao = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: false)
                 },
                 constraints: table =>
                 {
@@ -26,16 +26,17 @@ namespace LanchesMAC_WEB_APP_.Migrations
                 name: "Itens",
                 columns: table => new
                 {
-                    ItemId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
-                    NomeItem = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    DescricaoCurta = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    DescricaoDetalhada = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    Preco = table.Column<decimal>(type: "decimal(18,2)", nullable: false),
+                    ItemId = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    NomeItem = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: false),
+                    DescricaoCurta = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: false),
+                    DescricaoDetalhada = table.Column<string>(type: "nvarchar(300)", maxLength: 300, nullable: false),
+                    Preco = table.Column<decimal>(type: "decimal(10,2)", nullable: false),
                     ImagemUrl = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     ImagemThumbnailUrl = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     IsItemPreferido = table.Column<bool>(type: "bit", nullable: false),
                     EmEstoque = table.Column<bool>(type: "bit", nullable: false),
-                    CategoriaId = table.Column<Guid>(type: "uniqueidentifier", nullable: false)
+                    CategoriaId = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
