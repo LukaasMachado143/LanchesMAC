@@ -1,3 +1,6 @@
+using LanchesMAC_WEB_APP_.Context;
+using Microsoft.EntityFrameworkCore;
+
 namespace LanchesMAC_WEB_APP_
 {
     public class Program
@@ -8,6 +11,9 @@ namespace LanchesMAC_WEB_APP_
 
             // Add services to the container.
             builder.Services.AddControllersWithViews();
+            builder.Services.AddDbContext<AppDbContext>(
+                options => options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnectionString"))
+                );
 
             var app = builder.Build();
 
