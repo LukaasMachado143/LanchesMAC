@@ -10,5 +10,6 @@ namespace LanchesMAC_WEB_APP_.Context
         }
         public DbSet<Categoria> Categorias { get; set; }
         public DbSet<Item> Itens { get; set; }
+        public DbSet<CarrinhoCompraItem> CarrinhoCompraItens { get; set; }
     }
 }
