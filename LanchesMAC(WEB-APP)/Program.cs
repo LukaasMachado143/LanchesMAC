@@ -12,12 +12,17 @@ namespace LanchesMAC_WEB_APP_
             var builder = WebApplication.CreateBuilder(args);
 
             // Add services to the container.
-            builder.Services.AddControllersWithViews();
             builder.Services.AddDbContext<AppDbContext>(
                 options => options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnectionString"))
                 );
             builder.Services.AddTransient<ICategoriaRepository, CategoriaRepository>();
             builder.Services.AddTransient<IItemRepository, ItemRepository>();
+            builder.Services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
+
+            builder.Services.AddControllersWithViews();
+            builder.Services.AddMemoryCache();
+            builder.Services.AddSession();
+
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.
@@ -32,6 +37,7 @@ namespace LanchesMAC_WEB_APP_
             app.UseStaticFiles();
 
             app.UseRouting();
+            app.UseSession();
 
             app.UseAuthorization();
 
